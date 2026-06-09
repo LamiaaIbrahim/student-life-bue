@@ -6,7 +6,7 @@ Responsive one-page webpage concept for the Senior Web Designer & Editor assessm
 
 Planned custom subdomain:
 
-`https://student-life-bue.lamiaibrahim.site`
+`student-life-bue.lamiaibrahim.site`
 
 ## Concept
 

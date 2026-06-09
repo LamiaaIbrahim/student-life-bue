@@ -1,0 +1,43 @@
+/* Stats: raised engagement numbers below the hero. */
+.stats-band {
+  max-width: var(--max);
+  margin: -3.6rem auto 0;
+  position: relative;
+  z-index: 5;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--red);
+}
+
+.stat {
+  padding: 1.45rem 1rem;
+  border-right: 1px solid var(--line);
+}
+
+.stat:last-child {
+  border-right: 0;
+}
+
+.stat strong {
+  display: block;
+  color: var(--navy);
+  font-size: 2.05rem;
+  line-height: 1;
+}
+
+.stat span {
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+@media (max-width: 640px) {
+  .stats-band {
+    margin-top: 0;
+  }
+
+  .stat {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}

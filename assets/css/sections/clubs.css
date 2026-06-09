@@ -1,0 +1,35 @@
+/* Clubs: Bootstrap grid with custom card styling. */
+.club-grid {
+  margin-top: 2.2rem;
+}
+
+.club-card {
+  min-height: 265px;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.club-card:hover {
+  border-color: rgba(197, 18, 48, 0.4);
+  box-shadow: 0 16px 32px rgba(16, 43, 78, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1.4rem;
+  border-radius: 50%;
+  background: #f8e9ed;
+  color: var(--red);
+  font-weight: 900;
+}
+
+.club-card p {
+  margin: 0;
+  color: var(--muted);
+}

@@ -1,0 +1,61 @@
+/* Hero: full-width student-life banner with readable text overlay. */
+.hero {
+  position: relative;
+  min-height: 680px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(10, 22, 39, 0.88), rgba(10, 22, 39, 0.46) 52%, rgba(10, 22, 39, 0.18)),
+    url("https://www.bue.edu.eg/uploads/home-slides/2024-07-15%2012-48-09-619-home-slide-d-_1920x800.Jpeg") center / cover;
+}
+
+.hero-content {
+  position: relative;
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.hero .eyebrow {
+  color: #ffd46b;
+}
+
+.hero-copy {
+  max-width: 660px;
+  margin: 1.4rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.18rem;
+}
+
+.hero-actions {
+  margin-top: 1.8rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 610px;
+  }
+
+  .hero-media {
+    background:
+      linear-gradient(180deg, rgba(10, 22, 39, 0.84), rgba(10, 22, 39, 0.5)),
+      url("https://www.bue.edu.eg/uploads/home-slides/2024-07-15%2012-48-09-619-home-slide-d-_1920x800.Jpeg") center / cover;
+  }
+
+  .hero-content {
+    padding: 4rem 0;
+  }
+}

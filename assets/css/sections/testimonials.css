@@ -1,0 +1,63 @@
+/* Testimonials: simple rotating quote area. */
+.stories {
+  text-align: center;
+}
+
+.testimonial-track {
+  position: relative;
+  min-height: 230px;
+  margin-top: 2.25rem;
+}
+
+.testimonial {
+  display: none;
+  max-width: 870px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial p {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.35rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.control {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.control.active,
+.control:hover,
+.control:focus-visible {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
+}

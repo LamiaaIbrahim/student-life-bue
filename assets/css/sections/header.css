@@ -1,0 +1,91 @@
+/* Header: sticky BUE-style topbar and Bootstrap navbar adjustments. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.35rem 1rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.85rem 1rem;
+}
+
+.brand img {
+  width: 190px;
+}
+
+.nav-links {
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.nav-links .nav-link {
+  padding: 0.5rem 0.75rem;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link:focus-visible {
+  color: var(--red);
+}
+
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--white);
+  box-shadow: none;
+}
+
+.menu-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(197, 18, 48, 0.18);
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background-image: linear-gradient(var(--navy), var(--navy)), linear-gradient(var(--navy), var(--navy)), linear-gradient(var(--navy), var(--navy));
+  background-position: center 4px, center 10px, center 16px;
+  background-repeat: no-repeat;
+  background-size: 20px 2px;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    padding-top: 1rem;
+  }
+
+  .nav-links .navbar-nav {
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .brand img {
+    width: 150px;
+  }
+}
